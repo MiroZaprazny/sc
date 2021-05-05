@@ -61,13 +61,33 @@
       <input type="password" name="pwd" placeholder="Password">
       <input type="password" name="pwdrepeat" placeholder="Repeat password">
       <button type="submit" name="submit"> Sign up</button>
-
     </form>
+
+
+    <?php
+      if(isset($_GET["error"])){
+        if ($_GET["error"]=="emptyinput") {
+          echo "<p> Fill in all fields</p>";
+        }
+      elseif ($_GET["error"]=="invalidUid") {
+        echo "<p> Choose a proper userename</p>";
+      }
+      elseif ($_GET["error"]=="invalidEmail") {
+        echo "<p> Choose a proper Email</p>";
+      }
+      elseif ($_GET["error"]=="passwordsdontmatch") {
+        echo "<p> Passwords dont match</p>";
+      }
+      elseif ($_GET["error"]=="usernametaken") {
+        echo "<p> Username already taken</p>";
+      }
+      elseif ($_GET["error"]=="none") {
+        echo "<p> You have signed up</p>";
+      }
+      }
+
+     ?>
+
   </section>
-
-
-  </div>
-
-
 </body>
 </html>
