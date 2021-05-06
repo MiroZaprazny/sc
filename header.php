@@ -48,19 +48,19 @@
             <ul class="nav navbar-nav">
               <li> <a href="upload.php" style="margin-left:30px;width: 120px;background-color:rgba(97, 58, 182, 1);border: solid;text-align: center;color: white;margin-top:3px ;margin-right: 2px;">Upload</a></li>
                 <li> <a href="profile.php"style="background-color:rgba(97, 58, 182, 1);border: solid;text-align: center;color: white;width: 120px;margin-top:3px ;">Profile</a></li>
-                <li class="nav-item">
+
 
                   <?php
 
                       if (isset($_SESSION["useruid"])) {
-                        echo "it works";
+                        echo' <li class="nav-item">  <a class="nav-link" href="includes/logout.inc.php">Logout</a></li>' ;
+                      }
+                      else {
+                        echo '<li class="nav-item"><a class="nav-link" href="signup.php">Sign up</a></li>' ;
+                        echo ' <li class="nav-item">  <a class="nav-link" href="login.php">Log in</a></li>' ;
                       }
                    ?>
-                  <a class="nav-link" href="signup.php">Sign up</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.php">Login</a>
-                </li>
+
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
