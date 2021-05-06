@@ -16,7 +16,7 @@
                 echo "<p> Fill in all fields</p>";
               }
             elseif ($_GET["error"]=="wronglogin") {
-              echo "<p>Incorect Login infromation</p>";
+              echo "<p>Incorect Login information</p>";
             }
           }
 
