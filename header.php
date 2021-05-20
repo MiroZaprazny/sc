@@ -14,7 +14,6 @@
 
 
 </head>
-<p>SOM CIGAN</p>
 <body style='background-color:#cccccc ;'>
 <nav class="navbar navbar-default" style="background-color: rgba(66, 66, 66, 1);height: 65px; ">
         <div class="container-fluid">
