@@ -1,16 +1,21 @@
 <?php
 include_once 'header.php'
  ?>
+ <link rel="stylesheet" href="signupstyle.css">
+
 
       <section class="signup-form">
-    <h2>Sign up</h2>
-    <form action="includes/signup.inc.php" method="post">
-      <input type="text" name="name" placeholder="Full Name">
-      <input type="text" name="email" placeholder="Email">
-      <input type="text" name="uid" placeholder="Username">
-      <input type="password" name="pwd" placeholder="Password">
-      <input type="password" name="pwdrepeat" placeholder="Repeat password">
-      <button type="submit" name="submit"> Sign up</button>
+    <h2 class="header">Sign up</h2>
+    
+    <form action="includes/signup.inc.php" method="post" class="haharcar">
+    <div class="mirek">
+      <input type="text" name="name" placeholder="Full Name" class="rit"><br>
+      <input type="text" name="email" placeholder="Email"class="rit"><br>
+      <input type="text" name="uid" placeholder="Username"class="rit"><br>
+      <input type="password" name="pwd" placeholder="Password"class="rit"><br>
+      <input type="password" name="pwdrepeat" placeholder="Repeat password"class="rit"><br>
+      <button type="submit" name="submit"class="tlacidlo"> Sign up</button>
+</div>
     </form>
 
 

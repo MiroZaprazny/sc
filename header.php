@@ -9,6 +9,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -53,12 +56,18 @@
                   <?php
 
                       if (isset($_SESSION["useruid"])) {
-                        echo' <li class="nav-item">  <a class="nav-link" href="includes/logout.inc.php">Logout</a></li>' ;
+                        echo'<a class="nav-link" href="includes/logout.inc.php">Logout</a></li>' ;
                       }
                       else {
-                        echo '<li class="nav-item"><a class="nav-link" href="signup.php">Sign up</a></li>' ;
-                        echo ' <li class="nav-item">  <a class="nav-link" href="login.php">Log in</a></li>' ;
+                        echo '<li class="nav-item"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"style="background-color:rgba(97, 58, 182, 1);border: solid;text-align: center;color: white;width: 100px;margin-top:12px ;margin-left:10px;">
+                        <a class="nav-link" href="signup.php" style="color:white;">Sign up</a>
+                      </button></li>' ;
+                        echo ' <li class="nav-item"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"style="background-color:rgba(97, 58, 182, 1);border: solid;text-align: center;color: white;width: 100px;margin-top:12px ;margin-right:5px;">
+                        <a class="nav-link" href="login.php"style="color:white;">Log in</a>
+                      </button> </li>' ;
+                     
                       }
+                      
                    ?>
 
             </ul>

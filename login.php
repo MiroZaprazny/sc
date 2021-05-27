@@ -1,14 +1,17 @@
 <?php
   include_once 'header.php' ;
  ?>
-
-      <section class="signup-form">
-        <h2>log in</h2>
+<link rel="stylesheet" href="loginstyle.css">
+      
+<section class="signup-form">
+        <h2 class="header"class="header">Log in</h2>
         <div class="signup-form-form">
-        <form action="includes/login.inc.php" method="post">
-          <input type="text" name="uid" placeholder="Full name/Email">
-          <input type="password" name="pwd" placeholder="Password">
-          <button type="submit" name="submit">Login </button>
+        <form action="includes/login.inc.php" method="post" class="chleba">
+        <div class="mirek">
+          <input type="text" name="uid" placeholder="Full name/Email"class="rit">
+          <input type="password" name="pwd" placeholder="Password" class="rit">
+          <button type="submit" name="submit"class="tlacidlo">Login </button>
+</div>
           </div>
           <?php
             if(isset($_GET["error"])){
