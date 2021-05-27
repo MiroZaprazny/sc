@@ -65,9 +65,9 @@
                         echo ' <li class="nav-item"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"style="background-color:rgba(97, 58, 182, 1);border: solid;text-align: center;color: white;width: 100px;margin-top:12px ;margin-right:5px;">
                         <a class="nav-link" href="login.php"style="color:white;">Log in</a>
                       </button> </li>' ;
-                     
+
                       }
-                      
+
                    ?>
 
             </ul>
