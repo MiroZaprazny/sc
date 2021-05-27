@@ -1,6 +1,7 @@
 
 <?php
 include_once 'header.php' ;
+include_once 'upload.inc.php' ;
  ?>
 
  <?php
@@ -10,13 +11,11 @@ include_once 'header.php' ;
          }
   ?>
 
+<audio controls>
 
-      <div class="container-audio">
-        <p>lucki</p>
-        <audio controls  loop autoplay>
-                   <source src="4 The Betta.mp3" type="audio/ogg">
-               </audio>
-    </div>
+
+  <source src="<?php echo $_GET['name']?>" type="audio/mpeg">
+    </audio>
 
 </body>
 </html>

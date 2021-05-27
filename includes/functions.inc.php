@@ -140,4 +140,5 @@ function loginUser($conn,$username,$pwd){
     header('location: ../home.php');
     exit();
   }
+
 }
